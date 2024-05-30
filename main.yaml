@@ -1,0 +1,9 @@
+- name: "configure {{ component }} server"
+  hosts: "{{ component }}"
+  become: yes
+  roles:
+  - "{{ component }}"
+
+
+  # if run with this file in ansible with changing the component to first db, backend and frontend- directly u can configure the app and command for it is below
+  #ansible-playbook main.yaml -e component=db

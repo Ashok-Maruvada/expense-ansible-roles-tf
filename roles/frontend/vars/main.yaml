@@ -1,0 +1,3 @@
+backend_host: backend.goadd.fun
+app_location: /usr/share/nginx/html
+component: frontend
