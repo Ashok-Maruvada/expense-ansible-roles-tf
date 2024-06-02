@@ -2,3 +2,4 @@ login_user: root
 login_password: ExpenseApp1
 login_host: db-dev.goadd.fun
 db_host: db-dev.goadd.fun
+backend_host: backend.app-dev.goadd.fun
