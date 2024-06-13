@@ -39,10 +39,11 @@
 #     dest: /app
 #     remote_src: yes # to tell machine, take the source file from remote machine as we downloaded in last step
 
-- name: install npm
-  ansible.builtin.command: npm install
-  args:
-    chdir: /app
+# as our artifact is a combination of code and dependency
+# - name: install npm
+#   ansible.builtin.command: npm install
+#   args:
+#     chdir: /app
 
 - name: Copy backend service
   ansible.builtin.template:
